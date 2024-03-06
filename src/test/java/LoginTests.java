@@ -78,7 +78,7 @@ public class LoginTests {
 
 
     //WORKAROUND
-    //https://connect.facebook.net/en_US/fbevents.js request tries to be loaded and fails for ~34 seconds --> time out exception
+    //https://connect.facebook.net/en_US/fbevents.js request tries to be loaded and fails in ~34 seconds --> time out exception
     private void stopPageLoading() {
         sleep(6000);
         Selenide.executeJavaScript("window.stop();");
